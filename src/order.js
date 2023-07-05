@@ -2,7 +2,6 @@ import React from 'react'
 import './order.css'
 import moment from "moment";
 import CheckoutProduct from "./checkoutProduct";
-import { display } from '@mui/system';
 
 function Order({ order }) {
     return (
@@ -19,7 +18,6 @@ function Order({ order }) {
                     price={item.price}
                     rating={item.rating}
                     quantity={item.quantity}
-                    hideButton
                 />
             ))}
             Total Amount : {new Intl.NumberFormat('en-IN', {style: 'currency', currency : 'INR'}).format(order.amount/100)} 

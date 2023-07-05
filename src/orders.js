@@ -11,24 +11,26 @@ function Orders() {
     useEffect( () => {
         if(state.user){
             // const queryRef = query(collection(db, 'users', state.user?.uid, 'orders'), orderBy('created', 'desc'));
-            const x = []; 
             onSnapshot(query(collection(db, 'users', state.user?.uid, 'orders'), orderBy('created', 'desc')), async(snapshot) => {
+                const x = []; 
                 snapshot.forEach((doc) => {
                     // x.push({data : doc.data(), created : doc});
                     x.push(doc.data());
                     console.log("data", doc);
+                    setOrders([...x]);
                 });
             });    
-            console.log("x >>> ", x);
-            setOrders(x);
             // console.log("orders >>> ", orders);
+        }
+        else{
+            setOrders([]);
         }
     }, [state.user]);
 
-    // useEffect(() => {
-    //     console.log("orders", orders)
-    // }, [orders]);
-    dispatch({type : "CLEAR_BASKET"});
+    useEffect(() => {
+        console.log("orders", orders)
+        dispatch({type : "CLEAR_BASKET"});
+    }, [orders]);
   return (
     <div className={ordersCss.orders}>
     <h1>Your Orders</h1>
