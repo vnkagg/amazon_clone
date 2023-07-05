@@ -25,7 +25,7 @@ function Payment() {
             try {
                 const response = await axios(
                     {method: 'post',
-                    baseURL:'http://127.0.0.1:5001/clone-85620/us-central1/api',
+                    baseURL:'https://us-central1-clone-85620.cloudfunctions.net/api',
                     url: `/payments/create?total=${getTotalBasket(state.basket) * 100}`});
                 setClientSecret(response.data.clientSecret);
             } catch (error) {  

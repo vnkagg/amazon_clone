@@ -21,7 +21,8 @@ app.use(cors({origin: true}));
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  return res.status(200).send("Hey, this API is up and working");
+  // eslint-disable-next-line max-len
+  return res.status(200).send("Hey vinayak, your API for amazon-clone is up and working");
 });
 
 app.post("/payments/create", async (req, res) => {
