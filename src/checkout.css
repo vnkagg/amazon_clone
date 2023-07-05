@@ -1,0 +1,36 @@
+.bannerImage{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.banner{
+    padding: 5px 20px;
+}
+.checkout{
+    padding: 5px 20px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+.checkoutLeft{
+    background-color: white;
+    padding: 5px 20px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.checkoutRight{
+    margin-left: 10px;
+}
+
+.main{
+    display: flex;
+}
+.title{
+    padding: 10px;
+}
+.title > h1{
+    margin-bottom: 20px;
+    font-weight: 500;
+}

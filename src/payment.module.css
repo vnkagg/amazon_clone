@@ -1,0 +1,50 @@
+.section{
+    display: flex;
+    padding : 20px;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.Title{
+    flex: 0.2;
+    padding: 20px 20px;
+    font-weight: 900;
+}
+
+.content{
+    flex: 0.8;
+    margin: 20px  ;
+}
+.page > div {
+    border-bottom: 1px solid rgba(108, 107, 107, 0.64);
+}
+.heading{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.heading > h1{
+    font-weight: 900;
+}
+
+.orderTotal{
+    margin-top: 30px;
+    font-weight: 600;
+}
+.payButton {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.payButton:enabled {
+    background-color: #fcdd3f;
+    /* color: white; */
+}
+.payButton:disabled{
+    background-color: rgb(190, 190, 190);
+}
