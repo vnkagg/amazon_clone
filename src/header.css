@@ -49,6 +49,11 @@
     color: white;
     text-decoration: none;
 }
+/* .guest{
+    display: flex;
+    max-width: 100px;
+    overflow: hidden;
+} */
 Link{
     text-decoration: none;
 }

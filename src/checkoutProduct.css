@@ -2,9 +2,9 @@
     display: flex;
     width: 100%;
     margin: 20px 0;
-    background-color: rgba(205, 205, 205, 0.491);
     padding: 20px;
     border-radius: 20px;
+    border: 12px solid rgba(205, 205, 205, 0.491);
 }
 .checkoutProductInfo > span{
     margin: 2px 0;
@@ -20,7 +20,9 @@
     height: 180px;
     width: 200px;
     object-fit: contain;
-    mix-blend-mode: multiply;
+    mix-blend-mode  : multiply;
+    opacity: 200;
+    border-radius: 20px;
 }
 .checkoutProductRight{
     margin-left: 40px;
@@ -30,7 +32,9 @@
 }
 .checkoutProductRemove > button{
     background-color: #f0c14b;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
 }
 .checkoutRating{
     display: flex;
@@ -45,5 +49,8 @@ hr{
 .checkoutDropdown{
     width: max-content;
     padding: 5px;
+    margin-top: 5px;
+}
+.qty {
     margin-top: 5px;
 }

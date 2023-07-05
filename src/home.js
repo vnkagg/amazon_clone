@@ -21,7 +21,7 @@ function Home() {
                  
                 <Product
                     id="23445930"
-                    title="Apple iPhone 14 Pro Max (256 GB) - Deep PurpleAmazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
+                    title="Apple iPhone 14 Pro Max (256 GB) - Deep Purple"
                     price={143990}
                     rating={5}
                     image="https://m.media-amazon.com/images/I/31GmCJTD0GL._SY445_SX342_QL70_FMwebp_.jpg"

@@ -10,7 +10,7 @@ function Order({ order }) {
             <p className="order__id">
                 <p>{moment.unix(order.created).format("MMMM DD YYYY, HH:mm:ss")}</p>
             </p>
-            {order.basket?.map(item => (
+            {order.basket?.map((item, index) => (
                 <CheckoutProduct
                     id={item.id}
                     title={item.title}
@@ -18,6 +18,8 @@ function Order({ order }) {
                     price={item.price}
                     rating={item.rating}
                     quantity={item.quantity}
+                    hide={true}
+                    bg={index}
                 />
             ))}
             Total Amount : {new Intl.NumberFormat('en-IN', {style: 'currency', currency : 'INR'}).format(order.amount/100)} 

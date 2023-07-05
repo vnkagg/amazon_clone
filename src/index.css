@@ -4,6 +4,9 @@
   box-sizing: border-box;
 
 }
+button{
+  cursor: pointer;
+}
 body {
   margin: 0;
   background-color: rgb(234, 237, 237);
